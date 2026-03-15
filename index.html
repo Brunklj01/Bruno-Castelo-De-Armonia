@@ -442,55 +442,59 @@ margin:0;
 /* ROMANICO */
 
 .romanico{
-padding:120px 80px;
-background:white;
+  padding:120px 80px;
+  background:white;
 }
 
-.romanico-container{
-display:flex;
-gap:80px;
-max-width:1300px;
-margin:auto;
+.romanico-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1300px;
+  margin: auto;
+  align-items: flex-start;
 }
 
-.romanico-left{
-flex:1;
+.romanico-left,
+.romanico-right {
+  flex: 1;
 }
 
-.romanico-left img{
-width:100%;
-margin:20px 0;
-border-radius:6px;
+.romanico-right {
+  padding-top: 10px;
 }
 
-.romanico-box{
-border:1px solid #e5ded9;
-padding:15px;
-background:#f7f5f3;
+.romanico-right h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
 }
 
-.romanico-right{
-flex:1;
+.romanico-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 32px;
 }
 
-.romanico-right h3{
-margin-bottom:20px;
-}
-
-.romanico-list{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
 
 .romanico-item h4{
-font-size:14px;
-margin-bottom:5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #7a4a2a;
 }
 
 .romanico-item p{
-font-size:13px;
-color:#666;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media screen and (max-width: 900px){
+  .romanico-container{
+    flex-direction: column;
+  }
+  .romanico-list{
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -879,78 +883,55 @@ política e militar da época.
 <!-- ROMANICO -->
 
 <section class="romanico" id="romanico">
+  <div class="romanico-container">
 
-<div class="romanico-container">
+    <div class="romanico-left">
+      <span class="section-subtitle">ESTILO ARQUITECTÓNICO</span>
+      <h2>Elementos do Românico</h2>
+      <p>
+        O estilo românico, que floresceu na Europa entre os séculos XI e XIII,
+        caracteriza-se pela solidez das construções, pela utilização de arcos
+        de volta perfeita e pela simplicidade decorativa.
+      </p>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlULEXVBBpngek7rXIPaeSlt-ZxAVbCMk_A&s" alt="Arquitetura Românica">
+      <div class="romanico-box">
+        <h4>O Românico em Portugal</h4>
+        <p>O românico português desenvolveu características próprias, adaptadas ao relevo e aos materiais locais.</p>
+      </div>
+    </div>
 
-<div class="romanico-left">
+    <div class="romanico-right">
+      <h3>Características Arquitectónicas</h3>
+      <div class="romanico-list">
+        <div class="romanico-item">
+          <h4>Arcos de Volta Perfeita</h4>
+          <p>Elemento estrutural típico do estilo românico.</p>
+        </div>
+        <div class="romanico-item">
+          <h4>Paredes Espessas</h4>
+          <p>Estruturas robustas construídas para garantir defesa.</p>
+        </div>
+        <div class="romanico-item">
+          <h4>Silhares Regulares</h4>
+          <p>Blocos de pedra cuidadosamente talhados.</p>
+        </div>
+        <div class="romanico-item">
+          <h4>Frestas Estreitas</h4>
+          <p>Aberturas estreitas usadas para iluminação e defesa.</p>
+        </div>
+        <div class="romanico-item">
+          <h4>Merlões e Ameias</h4>
+          <p>Elementos defensivos no topo das muralhas.</p>
+        </div>
+        <div class="romanico-item">
+          <h4>Colunas e Frisos</h4>
+          <p>Detalhes decorativos simples mas elegantes.</p>
+        </div>
+      </div>
+    </div>
 
-<span class="section-subtitle">ESTILO ARQUITECTÓNICO</span>
-
-<h2>Elementos do Românico</h2>
-
-<p>
-O estilo românico, que floresceu na Europa entre os séculos XI e XIII,
-caracteriza-se pela solidez das construções, pela utilização de arcos
-de volta perfeita e pela simplicidade decorativa.
-</p>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwlULEXVBBpngek7rXIPaeSlt-ZxAVbCMk_A&s" alt="Arquitetura Românica">
-
-<div class="romanico-box">
-<h4>O Românico em Portugal</h4>
-<p>
-O românico português desenvolveu características próprias,
-adaptadas ao relevo e aos materiais locais.
-</p>
-</div>
-
-</div>
-
-
-<div class="romanico-right">
-
-<h3>Características Arquitectónicas</h3>
-
-<div class="romanico-list">
-
-<div class="romanico-item">
-<h4>Arcos de Volta Perfeita</h4>
-<p>Elemento estrutural típico do estilo românico.</p>
-</div>
-
-<div class="romanico-item">
-<h4>Paredes Espessas</h4>
-<p>Estruturas robustas construídas para garantir defesa.</p>
-</div>
-
-<div class="romanico-item">
-<h4>Silhares Regulares</h4>
-<p>Blocos de pedra cuidadosamente talhados.</p>
-</div>
-
-<div class="romanico-item">
-<h4>Frestas Estreitas</h4>
-<p>Aberturas estreitas usadas para iluminação e defesa.</p>
-</div>
-
-<div class="romanico-item">
-<h4>Merlões e Ameias</h4>
-<p>Elementos defensivos no topo das muralhas.</p>
-</div>
-
-<div class="romanico-item">
-<h4>Colunas e Frisos</h4>
-<p>Detalhes decorativos simples mas elegantes.</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
 
 <!-- FACTOS -->
 
